@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-section {
+    background-image: url('images/photo1.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* Pour couvrir tout l'espace */
+    background-position: top center; /* Pour centrer l'image en haut */
+    height: 500px; /* Ajuste la hauteur selon tes besoins */
+    position: relative; /* Ajouté pour le positionnement */
+}
+
+.overlay-content {
+    position: absolute; /* Positionnement absolu */
+    top: 50%; /* Centrage vertical */
+    left: 50%; /* Centrage horizontal */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer parfaitement */
+    padding: 20px;
+    color: white; /* Ajuste la couleur du texte pour plus de lisibilité */
+    text-align: center; /* Centrer le texte */
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan blanc avec transparence */
+}
+
+.info-wrapper img {
+    width: 300px; /* Ajuste la largeur selon tes besoins */
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-wrapper p {
+    flex: 1;
+    color: black; /* Couleur du texte */
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #03aecc; /* Couleur d'arrière-plan par défaut */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: black; /* Couleur du texte */
+}
+
+.contact-item:hover .icon {
+    background-color: #ffffff; /* Couleur au survol */
+}
+
+.contact-item:hover p {
+    color: #03aecc; /* Changer la couleur du texte au survol */
+}

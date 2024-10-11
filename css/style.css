@@ -742,6 +742,12 @@ a:focus {
   color: #fff;
 }
 
+.info{
+  padding: 75px 0;
+  background-color: #d1c2ca;
+  text-align: center;
+  color: #fff;
+}
 .info_section h4 {
   text-transform: uppercase;
   font-weight: bold;
@@ -769,7 +775,7 @@ a:focus {
 
 .info_section a {
   margin: 0 5px;
-  color: #ddd457;
+  color: #0355cc;
 }
 
 .info_section a i {
@@ -807,9 +813,34 @@ a:focus {
   background-position: center;
   text-align: center;
   line-height: 80px;
-  background-color: #cc0396;
+  background-color: #0355cc;
   color: #ffffff;
 }
+
+
+/*about2*/
+
+
+.info_items .item .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #03aecc; /* Couleur par défaut */
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 80px;
+  color: #000000;
+  transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.info_items .item .img:hover {
+  background-color: #157d90; /* Couleur au survol */
+  color: #c0f5ff; /* Changer la couleur du texte au survol si nécessaire */
+}
+
+
+/*about2*/
 
 .info_items .item .img-box i {
   font-size: 24px;
@@ -846,6 +877,9 @@ a:focus {
 .footer_section {
   background-color: #0a0f43;
 }
+.footer {
+  background-color: #d1c2ca;
+}
 
 .footer_section p {
   margin: 0;
@@ -858,6 +892,16 @@ a:focus {
 .footer_section a {
   color: inherit;
 }
+.footer p {
+  margin: 0;
+  padding: 25px 0;
+  color: #ffffff;
+  text-align: center;
+  border-top: 0.8px solid #ffffff;
+}
 
+.footer a {
+  color: inherit;
+}
 /* end footer section*/
 /* # sourceMappingURL=style.css.map */
