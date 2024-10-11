@@ -825,7 +825,7 @@ a:focus {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  background-color: #03aecc; /* Couleur par défaut */
+  background-color: #03aecc; 
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -835,8 +835,8 @@ a:focus {
 }
 
 .info_items .item .img:hover {
-  background-color: #157d90; /* Couleur au survol */
-  color: #c0f5ff; /* Changer la couleur du texte au survol si nécessaire */
+  background-color: #157d90;
+  color: #c0f5ff; 
 }
 
 
