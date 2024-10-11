@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Exemple de Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .toggle-button {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bienvenue sur Mon Site Web</h1>
+    </div>           
+
+    <div class="content">
+        <h2>Section Principale</h2>
+        <p>Ceci est un exemple de contenu. Vous pouvez ajouter du texte, des images et d'autres éléments ici.</p>
+        <button class="toggle-button" onclick="toggleContent()">Afficher/Masquer plus de contenu</button>
+        <div id="extraContent" class="hidden">
+            <p>Voici du contenu supplémentaire qui peut être affiché ou masqué.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </div>
+
+    <script>
+        function toggleContent() {
+            const extraContent = document.getElementById("extraContent");
+            if (extraContent.classList.contains("hidden")) {
+                extraContent.classList.remove("hidden");
+            } else {
+                extraContent.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+</html>
